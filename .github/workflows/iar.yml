@@ -1,6 +1,8 @@
 name: IAR CI
 
 on:
+  schedule:
+    - cron: '* */2 * * *'
   workflow_dispatch:
   push:
     paths-ignore:
